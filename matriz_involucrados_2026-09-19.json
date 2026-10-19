@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1789855144557,
+    "nombre": "Estudiantes ",
+    "poder": 1,
+    "interes": 8
+  },
+  {
+    "id": 1789855160790,
+    "nombre": "Soporte Tecnico",
+    "poder": 8,
+    "interes": 10
+  },
+  {
+    "id": 1789855178133,
+    "nombre": "Profesores",
+    "poder": 3,
+    "interes": 7
+  },
+  {
+    "id": 1789855370110,
+    "nombre": "Infraestructura Tecnologica",
+    "poder": 9,
+    "interes": 10
+  },
+  {
+    "id": 1789855390417,
+    "nombre": "Monitores",
+    "poder": 3,
+    "interes": 9
+  },
+  {
+    "id": 1789855411201,
+    "nombre": "Almacen ",
+    "poder": 7,
+    "interes": 6
+  }
+]

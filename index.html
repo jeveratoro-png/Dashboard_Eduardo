@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Gestion de Proyectos de Jorge</title>
+
+        <style>
+
+                    /* ==========================================================================
+            1. ESTILOS GENERALES Y LAYOUT
+            ========================================================================== */
+            * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            }
+
+            body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            display: flex;
+            min-height: 100vh;
+            }
+
+            /* Barra lateral de navegación (Sidebar) */
+            .sidebar {
+            width: 240px;
+            background-color: #1a252f;
+            color: #fff;
+            padding: 20px;
+            flex-shrink: 0;
+            }
+
+            .sidebar h2 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #34495e;
+            padding-bottom: 10px;
+            color: #ecf0f1;
+            }
+
+            .sidebar ul {
+            list-style: none;
+            }
+
+            .sidebar li {
+            margin-bottom: 12px;
+            }
+
+            .sidebar a {
+            color: #bdc3c7;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background 0.2s;
+            }
+
+            .sidebar a:hover {
+            background-color: #34495e;
+            color: #fff;
+            }
+
+            /* Área principal de contenido */
+            .main-content {
+            flex: 1;
+            padding: 30px;
+            overflow-y: auto;
+            }
+
+            header {
+            margin-bottom: 25px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            }
+
+            header h1 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+            }
+
+            header p {
+            color: #7f8c8d;
+            }
+
+            /* Tarjetas y Contenedores */
+            .section-card {
+            background-color: #fff;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            }
+
+            .section-card h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+            }
+
+            /* Grid para las Herramientas y Técnicas */
+            .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+            }
+
+            .grid-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 15px;
+            background-color: #fafafa;
+            }
+
+            .grid-card h3 {
+            color: #2980b9;
+            margin-bottom: 8px;
+            }
+
+            .grid-card p {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.4;
+            }
+
+            /* Estilos para Glosario / Definiciones */
+            .glossary-item {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #ddd;
+            }
+
+            .glossary-item:last-child {
+            border-bottom: none;
+            }
+
+            .glossary-term {
+            font-weight: bold;
+            color: #2c3e50;
+            }
+
+            /* Etiquetas/Badges para categorías */
+            .tag {
+            display: inline-block;
+            background-color: #e8f4f8;
+            color: #2980b9;
+            font-size: 0.8rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-top: 8px;
+            }
+
+            nav {
+            position: sticky;
+            top: 0;            /* Se fija arriba al hacer scroll */
+            height: 100vh;     /* Opcional: ocupa toda la altura de la pantalla */
+            overflow-y: auto;  /* Permite hacer scroll interno si el menú es muy largo */
+            }
+
+        </style>
+</head>
+
+<body>
+
+    <!----Barra de menu lateral-->
+    <nav class="sidebar">
+
+        <h2>GP Dashboard</h2>
+        <ul>
+            <li><a href="#definiciones">1. Definiciones</a></li>
+            <li><a href="#herramientas">2. Herramientas</a></li>
+            <li><a href="#tecnicas">3. Tecnicas</a></li>
+            <li><a href="#proyecto">4. Proyecto/Talleres</a></li>
+        </ul>
+
+    </nav>
+
+    <main class="=main-content">
+        <header>
+            <h1>Dashboard de Jorge Vera: Gestion de Poryectos</h1>
+            <p>Espacio de consulta de conceptos, herramientas y tecnicas</p>
+        </header>
+        
+        <!--Section 1: Definiciones-->
+
+        <section id="definiciones" class="section-card">
+        <h2>Definiciones fundamentales</h2>
+
+        <!--Estructura para agregar definiciones-->
+
+        <div class="glossary-item">
+            <p class="glossary-term">¿QUE ES UN PROYECTO?</p>
+            <p>Es un esfuerzo temporal realizado para crear valor a través de un producto, servicio o resultado único. Cuenta con un inicio y un final definidos, un equipo, un presupuesto, un cronograma y un conjunto de expectativas específicas por alcanzar.</p>
+        </div>
+
+        <div class="glossary-item">
+            <p class="glossary-term">INTERESADOS</p>
+            <p>Son las partes involucradas o personas (Stakeholders) para quienes las organizaciones crean valor. Su compromiso e involucramiento son fundamentales dentro de los principios de la gestión de proyectos.</p>
+        </div>
+
+        <div class="glossary-item">
+            <p class="glossary-term">CARACTERISTICAS DE LOS PROYECTOS</p>
+            <p>Son temporales, requieren esfuerzo y producen un resultado único. Su trabajo se organiza alrededor de equipos conformados por habilidades específicas y son liderados por profesionales para alcanzar sus metas. Aceptan la incertidumbre y el cambio, y su éxito se mide mediante predicciones.</p>
+        </div>
+
+        <div class="glossary-item">
+            <p class="glossary-term">PROYECTOS VS OPERACIONES</p>
+            <p>Los proyectos son esfuerzos temporales y únicos orientados a la conceptualización o lanzamiento de productos/servicios que aceptan la incertidumbre y el cambio. Las operaciones son la ejecución continua y repetitiva de actividades para replicar el éxito, sin admitir incertidumbre ni cambios.</p>
+        </div>
+
+        <div class="glossary-item">
+            <p class="glossary-term">HABILIDADES DEL GERENTE DE PROYECTOS</p>
+            <p>Comprenden las formas de trabajar (Ways of Working), habilidades de poder/liderazgo (Power Skills) y visión de negocio (Business Acumen). Incluyen comunicación, liderazgo servicial, empatía, resiliencia, responsabilidad y dominio de herramientas de gestión e interpersonales.</p>
+        </div>
+
+        <div class="glossary-item">
+            <p class="glossary-term">PLAN DE PRYECTO</p>
+            <p>Es el marco de gestión que integra la triple restricción (Línea base: Costos, Tiempo, Alcance), la coordinación global de elementos, las habilidades blandas (Recursos, Interesados, Comunicaciones) y las habilidades técnicas o de gestión (Riesgos, Calidad, Adquisiciones).</p>
+        </div>
+
+        <div class="glossary-item">
+            <p class="glossary-term">QUE NECESITO PARA LIDERAR PROYECTOS</p>
+            <p>Se requiere fomentar un buen ambiente laboral, asumir responsabilidades, tener empatía, ofrecer mentoría y capacidad para resolver problemas. Asimismo, se necesita conocimiento en la guía PMBOK, normas de ética, teorías administrativas y adaptabilidad según el entorno organizacional.</p>
+        </div>
+
+        </section>
+
+        <!--Section 2: Herramientas-->
+
+        <section id="herramientas" class="section-card">
+        <h2>Herramientas Gestion de proyectos</h2>
+        <p>Herramientas de Gestion para el control de proyectos</p>
+
+        <!--Estructura para agregar herramientas-->
+
+        <div class="grid-container">
+            <div class="grid-card">
+                <h3>Matriz de Poder e Interes</h3>
+                <p>Herramienta visual para clasificar a los invlocurados según su nivel de autroridad e interés en el proyecto.</p>
+                <a href="matrizpoderinteres.html" class="tag">Gestión de involucrados</a>
+            </div>
+
+        </div>
+
+        </section>
+
+        <!--Section 3: Tecnicas-->
+
+        <section id="tecnicas" class="section-card">
+        <h2>Tecnicas y marcos de trabajo</h2>
+        <p>...</p>
+
+        <!--Estructura para agregar tecnicas-->
+
+        <div class="grid-container">
+            <div class="grid-card">
+                <h3>Nombre de la tecnica</h3>
+                <p>Descripcion de la metodologia</p>
+                <span class="tag">Enfoque</span>
+            </div>
+        </div>
+
+        </section>
+
+        <!--Section 4: Proyecto curso-->
+
+        <section id="proyecto" class="section-card">
+        <h2>Proyecto desarrollado en clase</h2>
+        <p>Espacio para cargar evidencias de las actividades</p>
+
+        <!--Estructura para agregar tecnicas-->
+
+        <div class="glossary-item">
+            <p class="glossary-term">Numero de la clase</p>
+            <p>Notas o enlaces a archivos o documentos</p>
+        </div>
+
+        </section>
+        
+    </main>
+
+</body>
+</html>
